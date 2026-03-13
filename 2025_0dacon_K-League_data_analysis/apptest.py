@@ -27,11 +27,17 @@ if "time_idx" not in st.session_state:
 # =========================
 # 2. 데이터 로드
 # =========================
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
 @st.cache_data
 def load_data():
-    match = pd.read_csv("match_info.csv")
-    states = pd.read_csv("state_df.csv")
-    demo = pd.read_csv("demo_df.csv")
+    match = pd.read_csv(BASE_DIR / "match_info.csv")
+    states = pd.read_csv(BASE_DIR / "state_df.csv")
+    demo = pd.read_csv(BASE_DIR / "demo_df.csv")
+
+    return match, states, demo
 
     return match, states, demo
 
