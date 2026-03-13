@@ -29,15 +29,9 @@ if "time_idx" not in st.session_state:
 # =========================
 @st.cache_data
 def load_data():
-    base = "https://raw.githubusercontent.com/bories97/Python/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)"
-
-    url_match = f"{base}/match_info.csv"
-    url_state = f"{base}/state_df.csv"
-    url_demo  = f"{base}/demo_df.csv"
-
-    match = pd.read_csv(url_match)
-    states = pd.read_csv(url_state)
-    demo = pd.read_csv(url_demo)
+    match = pd.read_csv("match_info.csv")
+    states = pd.read_csv("state_df.csv")
+    demo = pd.read_csv("demo_df.csv")
 
     return match, states, demo
 
