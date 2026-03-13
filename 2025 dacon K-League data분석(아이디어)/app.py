@@ -30,7 +30,8 @@ if "time_idx" not in st.session_state:
 def load_data():
     url_match = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/match_info.csv"
     url_state = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/state_df.csv"
-    url_demo  = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/demo_df.csv/demo_df.csv"
+    url_demo  = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/demo_df.csv"
+    
 
     match = pd.read_csv(url_match)
     states = pd.read_csv(url_state)
