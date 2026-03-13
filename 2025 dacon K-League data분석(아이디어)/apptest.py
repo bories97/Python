@@ -29,9 +29,9 @@ if "time_idx" not in st.session_state:
 # =========================
 @st.cache_data
 def load_data():
-    url_match = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/%EA%B3%B5%EB%AA%A8%EC%A0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0/match_info.csv"
-    url_state = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/%EA%B3%B5%EB%AA%A8%EC%A0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0/state_df.csv"
-    url_demo  = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/%EA%B3%B5%EB%AA%A8%EC%A0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0/demo_df.csv"
+    url_match = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/match_info.csv"
+    url_state = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/state_df.csv"
+    url_demo  = "https://raw.githubusercontent.com/bories97/Python/refs/heads/main/2025%20dacon%20K-League%20data%EB%B6%84%EC%84%9D(%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)/demo_df.csv"
 
     match = pd.read_csv(url_match)
     states = pd.read_csv(url_state)
